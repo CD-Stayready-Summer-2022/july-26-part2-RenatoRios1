@@ -17,8 +17,6 @@ public class CountDuplicatesTest {
     public void countDuplicateIntegersTest1(){
         // Given
         Integer[] integers = {1,2,3,4,5,1,3,2,3,6,6,3,3,2,5};
-
-
         // When
         Integer expectedNumberOfDuplicates = 5;
         Integer actualNumberOfDuplicates = countDuplicates.countDuplicates(integers);

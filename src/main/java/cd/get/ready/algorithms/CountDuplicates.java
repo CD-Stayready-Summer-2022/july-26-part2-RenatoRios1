@@ -16,7 +16,10 @@ public class CountDuplicates {
             if(!map.containsKey(each)){
                 map.put(each, 1);
             }else{
-                count++;
+                map.put(each, map.get(each)+1);
+                if(!(map.get(each)>2)) {
+                    count++;
+                }
             }
         }
         return count;
